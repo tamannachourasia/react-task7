@@ -1,0 +1,77 @@
+/* src/components/Task.css */
+
+.task {
+  margin-top: 20px;
+  background-color: #333;
+  border-radius: 5px;
+  padding: 20px;
+  color: #fff;
+}
+
+.task input,
+.task select,
+.task button {
+  display: block;
+  width: calc(100% - 40px);
+  margin: 10px 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+.task input {
+  background-color: #eee;
+  color: #000;
+}
+
+.task select {
+  background-color: #eee;
+  color: #000;
+}
+
+.task button {
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task button:hover {
+  background-color: #218838;
+}
+
+.task-item {
+  background-color: #444;
+  border: 1px solid #555;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+  background-color: #555;
+}
+
+.task-item h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+}
+
+.task-item p {
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .task {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 480px) {
+  .task {
+    width: 100%;
+  }
+}
